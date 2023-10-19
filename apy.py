@@ -11,3 +11,9 @@ def landing_page():
 if __name__ == '__main__':
     app.run(host='0.0.0.0',port=1991, debug=True)
 >>>>>>> branch-ticket-2
+@app.route("/dashboard")
+def dashboard():
+    return render_template('ÑAÑAAÑÑAÑAÑAÑAÑÑA.html')
+@app.route("/map")
+def map():
+    return render_template('map.html')
