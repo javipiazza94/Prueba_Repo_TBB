@@ -21,7 +21,11 @@ def json_to_df(data):
     places['address'].append(street + ' ' + str(number))
     return pd.DataFrame(places)
 
+<<<<<<< HEAD
 list_health = ["bichitos de colores súper chulos"]
+=======
+list_health = ["hospital", "clinic", "doctors"]
+>>>>>>> branch-ticket-3-2
 dataframes = []
 for amenity in list_health:
     overpass_url = "http://overpass-api.de/api/interpreter"
@@ -55,5 +59,10 @@ for row in health_csv.itertuples():
     popup=row.name,
     icon=folium.Icon(icon='glyphicon glyphicon-heart-empty',
     color='blue')))
+<<<<<<< HEAD
     some_map2.add_child(mc)
     some_map2.save('templates/map.html')
+=======
+some_map2.add_child(mc)
+some_map2.save('templates/bichitosdecolores.html')
+>>>>>>> branch-ticket-3-2
